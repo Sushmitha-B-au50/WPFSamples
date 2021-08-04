@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFResourcesSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFResourcesSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="-44,0,0,0">
+        <Grid.Resources>
+            <SolidColorBrush  Color="Red" x:Key="cbutton">
+            </SolidColorBrush>
+        </Grid.Resources>
+        <Button Width="150" Content="Button" Background="{StaticResource cbutton}" Margin="77,10,617,373"/>
+        <Button Content="samplebutton" Background="{DynamicResource DynamicColor}" HorizontalAlignment="Left" Width="213" Margin="129,133,0,217"/>
+        <Button Content="change color to brown" Margin="422,89,33,279" Click="Button_Click"/>
+        <Button Content="change color to blue" Margin="422,176,33,189" Click="Button_Click_1"/>
+    </Grid>
+</Window> 
